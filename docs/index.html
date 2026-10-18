@@ -1,20 +1,158 @@
-<h1>Encrypt and decrypt Linux files with AES-256-GCM</h1>
-<div>
-  <p>
-    In the era of AI agents, it is becoming increasingly important to protect
-  important files from accidental access.
-  </p>
-  <p>
-    A Linux app (more platforms to come) for password-based AES-256-GCM file encryption
-  and decryption.
-  </p>
-  <p>
-    It replaces the original files with encrypted ones. Back up original files
-  first, for instance in a password-protected archive or an external location.
-  </p>
-  <p>
-    The app browses folders, encrypts or decrypts files recursively, previews
-  supported text files, searches file names and supported text contents, and can
-  reveal encrypted text previews in memory without writing plaintext files.
-  </p>
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#183f32">
+    <meta name="description"
+      content="File Encrypter for Linux: password-based AES-256-GCM encryption, folder processing, and text previews.">
+    <title>File Encrypter — A little more privacy for your files</title>
+    <link rel="icon" type="image/png" href="assets/file-encrypter-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="brand" href="./" aria-label="File Encrypter home">
+        <img src="assets/file-encrypter-icon.png" width="42" height="42" alt="">
+        <span>File Encrypter</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#project">Project</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Made for Linux desktop</p>
+          <h1 id="hero-title">Your files.<br>Your password.<br><em>Your peace of mind.</em></h1>
+          <p class="intro">
+            In the era of AI agents, it is becoming increasingly important to protect
+  important files from accidental access. Give your important files a little more privacy. Encrypt and decrypt them with a password,
+            using AES-256-GCM, in a familiar desktop file browser.
+          </p>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/file-encrypter.png" width="718" height="718"
+            alt="File Encrypter logo: a green shield with the letter F and a padlock" fetchpriority="high">
+          <figcaption>Password-based protection. File by file.</figcaption>
+        </figure>
+      </section>
+
+      <div class="facts wrap" aria-label="App at a glance">
+        <p><strong>AES-256-GCM</strong><span>File encryption</span></p>
+        <p><strong>Files &amp; folders</strong><span>Recursive processing</span></p>
+        <p><strong>Preview &amp; search</strong><span>Supported text files</span></p>
+      </div>
+
+      <section class="features wrap section" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Protection meets practicality</p>
+          <h2 id="features-title">Keep your files close.<br>Keep working with them.</h2>
+          <p>Everyday file tools, with encryption built into the workflow.</p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span class="feature-number" aria-hidden="true">01 / PROTECT</span>
+            <h3>A file or a whole folder</h3>
+            <p>
+              Select individual files, folders, or both. Encrypt or decrypt the files inside selected folders
+              recursively, with progress you can follow and the option to stop scheduling more files.
+            </p>
+          </article>
+          <article>
+            <span class="feature-number" aria-hidden="true">02 / FIND</span>
+            <h3>Less searching around</h3>
+            <p>
+              Browse your filesystem, save favorite folders, and search file names and supported text contents.
+              Include encrypted text in your search when you provide the correct password.
+            </p>
+          </article>
+          <article>
+            <span class="feature-number" aria-hidden="true">03 / WORK</span>
+            <h3>A peek, without a plaintext file</h3>
+            <p>
+              Reveal supported encrypted text in memory without writing a plaintext file to disk.
+              Edit supported text files, including encrypted ones, and choose a light, dark, or system theme.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow" id="how-it-works" aria-labelledby="workflow-title">
+        <div class="wrap workflow-grid">
+          <div>
+            <p class="eyebrow">A simple round trip</p>
+            <h2 id="workflow-title">From readable<br>to encrypted.<br>And back again.</h2>
+            <p>
+              Choose your files, enter and confirm your encryption password, then encrypt.
+              To restore them, select the encrypted files and decrypt with the same password.
+            </p>
+          </div>
+          <div class="file-example" aria-label="Example: notes.txt becomes notes.txt.fenc when encrypted">
+            <div class="file-row">
+              <span class="file-symbol" aria-hidden="true">≡</span>
+              <div><span class="file-label">Original file</span><code>notes.txt</code></div>
+              <span class="file-state">Readable</span>
+            </div>
+            <div class="file-connector"><span aria-hidden="true">↓</span> Encrypt with your password</div>
+            <div class="file-row encrypted">
+              <span class="file-symbol" aria-hidden="true">∗</span>
+              <div><span class="file-label">Encrypted counterpart</span><code>notes.txt.fenc</code></div>
+              <span class="file-state">Encrypted</span>
+            </div>
+            <p class="restore-note">Decrypt with the correct password to restore <code>notes.txt</code>.</p>
+          </div>
+          <aside class="backup-note" aria-labelledby="backup-title">
+            <span class="note-mark" aria-hidden="true">!</span>
+            <div>
+              <h3 id="backup-title">Back up before you encrypt</h3>
+              <p>
+                Encryption replaces each original file with its encrypted counterpart. Decryption restores the
+                original path and removes the encrypted file. Keep a separate backup of important files, for example
+                in a password-protected archive or on an external drive, and keep your password safe.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="project wrap section" id="project" aria-labelledby="project-title">
+        <div class="section-heading">
+          <p class="eyebrow">The project</p>
+          <h2 id="project-title">Linux first.<br>More to come.</h2>
+          <p>File Encrypter is a desktop application focused on password-based file protection.</p>
+        </div>
+        <dl class="project-details">
+          <div>
+            <dt>Platform</dt>
+            <dd>Linux desktop is the current target platform.</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd>Flatpak / Flathub distribution is in preparation. A download link will be added here when available.</dd>
+          </div>
+          <div>
+            <dt>License</dt>
+            <dd>
+              File Encrypter is proprietary software. Final distribution terms are pending and will be published
+              here before release.
+            </dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <a class="brand" href="./">
+        <img src="assets/file-encrypter-icon.png" width="32" height="32" alt="">
+        <span>File Encrypter</span>
+      </a>
+      <p>A little more privacy for your files.</p>
+      <a href="#main">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
