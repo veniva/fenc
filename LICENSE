@@ -1,0 +1,53 @@
+File Encrypter Proprietary License
+Version 1.1
+
+1. Scope and ownership
+
+This license applies to the File Encrypter application (also known as Fenc),
+including its original code, binaries, documentation, and branding supplied with
+the application (the "Software"). The Software is proprietary. Its copyright
+holders retain ownership and all rights not expressly granted by this license.
+
+2. Free use and redistribution
+
+Permission is granted, without a license fee, to install, run, and use the
+Software for personal or commercial purposes, and to copy and redistribute
+unmodified copies of the Software, subject to this license.
+
+Every distributed copy must include this license and preserve all copyright, 
+attribution, trademark, and third-party license notices. Recipients receive 
+the same rights under this license directly from the copyright holders; 
+distributors may not impose terms that restrict those rights.
+
+3. Restrictions
+
+You may not:
+
+- Modify, adapt, translate, or create derivative works of the Software.
+- Reverse engineer, decompile, disassemble, or otherwise attempt to derive the
+  source code or internal implementation of the Software.
+- Rebrand, rename, relabel, or present the Software as another product, or remove,
+  replace, alter, or obscure its name, logos, branding, or ownership notices.
+- Claim ownership of the Software or imply endorsement by its copyright holders
+  without their permission.
+
+The File Encrypter name and logos may be reproduced solely to identify and
+redistribute unmodified copies under this license. No other trademark rights
+are granted.
+
+4. Third-party components and mandatory legal rights
+
+Third-party components remain subject to their respective licenses. This license
+does not replace those licenses or restrict rights they grant. Separately
+licensed application metadata and packaging materials retain their own terms.
+The restrictions above apply only to the extent permitted by applicable law and
+do not limit rights that cannot lawfully be excluded or restricted by agreement.
+
+5. Disclaimer of warranty and limitation of liability
+
+To the extent permitted by applicable law, the Software is provided "AS IS",
+without warranties of any kind, express or implied, including merchantability,
+fitness for a particular purpose, and noninfringement. To the extent permitted
+by applicable law, the copyright holders shall not be liable for any claims,
+damages, or other liability arising from the Software or its use, including
+loss of data, whether in contract, tort, or otherwise.
